@@ -11,17 +11,17 @@ body{
     align-items: center;
     text-align: center;
 }
-
-/* *{
-    margin: auto;
-} */
+html{
+ margin:0;
+    padding:0;
+}
 main{
-    margin: auto;
-    width: 450px;
+     margin: auto; 
+    max-width: 450px;
     background-color: white;
     border-radius: 20px; 
     overflow: hidden;
-    min-width: 450px;
+    /* min-width: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,8 @@ main{
 h2{
     margin: 30px;
     padding: 20px auto;
-    color: hsl(223, 47%, 23%);;
+    color: hsl(223, 47%, 23%);
+    font-size: 27px;
 }
 .text{
     font-family: 'Red Hat Display', sans-serif;
@@ -53,10 +54,10 @@ h2{
      display: flex;
      justify-content: space-around;
      align-items: center;
-     width: 70%;
-     height: 10vh;
+     width: 315px;
+     height: 85px;
      line-height: 6px;
-    padding: 5px;
+     padding: 5px;
      border-radius: 15px;
     
 
@@ -66,8 +67,8 @@ h2{
     color: hsl(223, 47%, 23%);
  }
  .plan_price{
-     padding-right: 70px;
-     
+     /* padding-right: 70px; */
+    
      font-family: 'Red Hat Display', sans-serif;
      color: hsl(224, 23%, 55%);
  }
@@ -111,3 +112,40 @@ h2{
      font-family: 'Red Hat Display', sans-serif;
      color: hsl(224, 23%, 55%);
  }
+ @media only screen and (max-width: 600px) {
+    body {
+      background-image: url(./images/pattern-background-mobile.svg);
+      background-color: hsl(225, 100%, 94%);
+    }
+    #img{
+        width: 330px;
+    }
+    main{
+        width: 330px;
+    }
+    .plan_price{
+        padding-right: 15px;
+        font-size: 14px;
+     
+    }
+    .plan{
+        width: 260px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .plan img{
+        margin-left: 10px;
+       
+    }
+   
+    .text p{
+      
+      font-size: 15px;
+      line-height: 7px;
+    }
+    .pay{
+        width: 270px;
+    }
+}
