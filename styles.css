@@ -1,20 +1,18 @@
-body{
+body,html{
     margin: 0;
     padding: 0;
     background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
     overflow: hidden;
+    width:100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-html{
- margin:0;
-    padding:0;
-}
+
 main{
      margin: auto; 
     max-width: 450px;
